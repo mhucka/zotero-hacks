@@ -43,7 +43,6 @@
   <macro name="author-short">
     <names variable="author">
       <name form="short" and="symbol" initialize-with=" "/>
-      <et-al font-style="italic"/>
       <substitute>
         <names variable="editor"/>
       </substitute>
@@ -71,7 +70,7 @@
     <choose>
       <if variable="issued">
         <date variable="issued">
-          <date-part prefix=" " name="year" suffix=""/>
+          <date-part name="year" suffix=""/>
         </date>
       </if>
       <else>
@@ -150,10 +149,10 @@
       <key macro="issued" sort="ascending"/>
     </sort>
     <layout>
-      <group delimiter=". " suffix=".">
+      <group delimiter=" ">
         <group delimiter=" ">
           <text macro="author"/>
-          <text macro="issued"/>
+          <text macro="issued" prefix="(" suffix=")"/>
         </group>
         <text macro="title"/>
       </group>
