@@ -1,0 +1,160 @@
+[
+  {
+    "_name": "Unpaywall",
+    "_alias": "Unpaywall",
+    "_description": "Unpaywall Lookup",
+    "_icon": "https://oadoi.org/static/img/favicon.png",
+    "_hidden": false,
+    "_urlTemplate": "https://oadoi.org/{z:DOI}",
+    "_urlParams": [],
+    "_urlNamespaces": {
+      "z": "http://www.zotero.org/namespaces/openSearch#"
+    },
+    "_iconSourceURI": "https://oadoi.org/static/img/favicon.png"
+  },
+
+  {
+    "_name": "CrossRef Lookup",
+    "_alias": "CrossRef",
+    "_description": "CrossRef Search Engine",
+    "_icon": "https://crossref.org/favicon.ico",
+    "_iconSourceURI": "https://crossref.org/favicon.ico",
+    "_hidden": false,
+    "_urlTemplate": "https://crossref.org/openurl?{z:openURL}&pid=zter:zter321",
+    "_urlParams": [],
+    "_urlNamespaces": {
+      "rft": "info:ofi/fmt:kev:mtx:journal",
+      "z": "http://www.zotero.org/namespaces/openSearch#",
+      "": "http://a9.com/-/spec/opensearch/1.1/"
+    }
+  },
+  {
+    "_name": "PubMed DOI",
+    "_alias": "PubMed DOI",
+    "_urlTemplate": "https://pubmed.ncbi.nlm.nih.gov/?term={z:DOI}",
+    "_description": "Search PubMed DOI",
+    "_urlParams": [],
+    "_hidden": false,
+    "_icon": "https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon.png",
+    "_urlNamespaces": {
+      "rft": "info:ofi/fmt:kev:mtx:journal",
+      "z": "http://www.zotero.org/namespaces/openSearch#",
+      "": "http://a9.com/-/spec/opensearch/1.1/"
+    }
+  },
+  {
+    "_name": "PubMed (title + author)",
+    "_alias": "PubMed (title + author)",
+    "_urlTemplate": "https://pubmed.ncbi.nlm.nih.gov/?term=({z:title}[title]) AND ({rft:aulast?}[Author])",
+    "_description": "Search PubMed (title + author)",
+    "_urlParams": [],
+    "_hidden": false,
+    "_icon": "https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon.png",
+    "_urlNamespaces": {
+      "rft": "info:ofi/fmt:kev:mtx:journal",
+      "z": "http://www.zotero.org/namespaces/openSearch#",
+      "": "http://a9.com/-/spec/opensearch/1.1/"
+    }
+  },
+  {
+    "_name": "Google Scholar Search",
+    "_alias": "Google Scholar",
+    "_description": "Google Scholar Search",
+    "_icon": "file:///Users/mhucka/databases/zoter-bibliography/locate/Google%20Scholar%20Search.ico",
+    "_hidden": false,
+    "_urlTemplate": "https://scholar.google.com/scholar?as_q=&as_epq={z:title}&as_occt=title&as_sauthors={rft:aufirst?}+{rft:aulast?}&as_ylo={z:year?}&as_yhi={z:year?}&as_sdt=1.&as_sdtp=on&as_sdtf=&as_sdts=22&",
+    "_urlParams": [],
+    "_urlNamespaces": {
+      "rft": "info:ofi/fmt:kev:mtx:journal",
+      "z": "http://www.zotero.org/namespaces/openSearch#",
+      "": "http://a9.com/-/spec/opensearch/1.1/"
+    },
+    "_iconSourceURI": "https://scholar.google.com/favicon.ico"
+  },
+  {
+    "_name": "Google Scholar using Title",
+    "_alias": "Google Scholar",
+    "_description": "Search Google Scholar using Title",
+    "_icon": "https://scholar.google.com/favicon.ico",
+    "_hidden": false,
+    "_urlTemplate": "http://scholar.google.com/scholar?as_q=&as_epq={z:title}&as_occt=title&as_sdt=1.&as_sdtp=on&as_sdtf=&as_sdts=22&",
+    "_urlParams": [],
+    "_urlNamespaces": {
+      "rft": "info:ofi/fmt:kev:mtx:journal",
+      "z": "http://www.zotero.org/namespaces/openSearch#",
+      "": "http://a9.com/-/spec/opensearch/1.1/"
+    },
+    "_iconSourceURI": "https://scholar.google.com/favicon.ico"
+  },
+
+  {
+    "_name": "Connected Papers",
+    "_alias": "Connected Papers",
+    "_urlTemplate": "https://connectedpapers.com/api/redirect/doi/{z:DOI}",
+    "_description": "Explore connected papers in a visual graph",
+    "_urlParams": [],
+    "_hidden": false,
+    "_icon": "https://www.connectedpapers.com/favicon.ico",
+    "_urlNamespaces": {
+      "z": "http://www.zotero.org/namespaces/openSearch#"
+    }
+  },
+
+  {
+    "_name": "Web of Science",
+    "_alias": "WOS",
+    "_description": "Web of Science Search",
+    "_icon": "https://login.webofknowledge.com/error/WOK5/images/wok_favicon.ico",
+    "_hidden": false,
+    "_urlTemplate": "https://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&{z:openURL}",
+    "_urlParams": [],
+    "_urlNamespaces": {
+      "rft": "info:ofi/fmt:kev:mtx:journal",
+      "z": "http://www.zotero.org/namespaces/openSearch#"
+    },
+    "_iconSourceURI": "https://login.webofknowledge.com/error/WOK5/images/wok_favicon.ico"
+  },
+  {
+    "_name": "Scopus",
+    "_alias": "Elsevier Scopus",
+    "_description": "Elsevier Scopus",
+    "_icon": "https://www.scopus.com/static/proteus-images/favicon.ico",
+    "_hidden": false,
+    "_urlTemplate": "https://www.scopus.com/results/results.uri?src=s&sot=a&sdt=a&s=TITLE%28%22{z:title}%22%29+AND+PUBYEAR+IS+{z:year?}&origin=searchadvanced",
+    "_urlParams": [],
+    "_urlNamespaces": {
+      "z": "http://www.zotero.org/namespaces/openSearch#"
+    },
+    "_iconSourceURI": "https://www.scopus.com/static/proteus-images/favicon.ico"
+  },
+  {
+    "_name": "ProQuest",
+    "_alias": "ProQuest",
+    "_description": "ProQuest Search",
+    "_icon": "https://www.proquest.com/favicon.ico",
+    "_hidden": false,
+    "_urlTemplate": "https://proquest.umi.com/pqdweb?SQ=TI(+{z:title}+)+YR(+{z:year?}+)&RQT=305&querySyntax=PQ&searchInterface=1&moreOptState=CLOSED&TS=1139706667&JSEnabled=1&DBId=-1",
+    "_urlParams": [],
+    "_urlNamespaces": {
+      "rft": "info:ofi/fmt:kev:mtx:journal",
+      "z": "http://www.zotero.org/namespaces/openSearch#"
+    },
+    "_iconSourceURI": "https://www.proquest.com/favicon.ico"
+  },
+  {
+    "_name": "Paperity",
+    "_alias": "Paperity",
+    "_description": "A multidisciplinary aggregator of Open Access journals and papers",
+    "_icon": "https://paperity.org/static/img/favicon.ico",
+    "_hidden": false,
+    "_urlTemplate": "https://paperity.org/search/?as_t={rft:title?}",
+    "_urlParams": [],
+    "_method": "GET",
+    "_urlNamespaces": {
+      "rft": "info:ofi/fmt:kev:mtx:book",
+      "xmlns": "http://a9.com/-/spec/opensearch/1.1/",
+      "z": "http://www.zotero.org/namespaces/openSearch#"
+    },
+    "_iconSourceURI": "https://paperity.org/static/img/favicon.ico"
+  }
+]
