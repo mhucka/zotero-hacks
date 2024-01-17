@@ -1,10 +1,10 @@
-# Mike's bib hacks
+# Mike's Zotero hacks
 
-This is a random collection of things related to bibliography and reference management.
+This is a random collection of things related to bibliography and reference management
 
 ## Introduction
 
-This is my personal for keeping files that have no other obvious home, for various needs related to managing bibliographies, references, and suchlike.
+This is my personal for keeping files that have no other obvious home, for various needs related to Zotero, [CSL](https://citationstyles.org), managing bibliographies, references, and suchlike.
 
 
 ## Getting help
